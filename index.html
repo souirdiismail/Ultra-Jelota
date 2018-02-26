@@ -2,6 +2,10 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta charset="utf-8">
+  	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<meta name="keywords" content="footer, contact, form, icons" />
     <title></title>
       <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="Styles\Style.css">
@@ -142,5 +146,88 @@
           </ul>
           </center>
       </section>
+      <section class="faq">
+        <h2 style="text-align:center;">FAQ</h2>
+        <div id="container">
+        <button class="accordion">Chkoun e7na ?</button>
+        <div class="panel">
+          <p>7na ljazayer .</p>
+        </div>
+
+        <button class="accordion">Finahoma Tkharj ?</button>
+        <div class="panel">
+          <p>fTizk !</p>
+        </div>
+
+        <button class="accordion">Wakha t3tini khbzati ?</button>
+        <div class="panel">
+          <p>mojrimin kafirin 3aaaaaa</p>
+        </div>
+        </div>
+      </section>
+    </div>
+    <footer class="footer-distributed">
+
+			<div class="footer-left">
+
+				<h3>Ultra Jelota</h3>
+
+				<p class="footer-links">
+					<a href="#">Home</a>
+					·
+					<a href="#">Product</a>
+					·
+					<a href="#">About</a>
+					·
+					<a href="#">Faq</a>
+					·
+					<a href="#">Contact</a>
+				</p>
+
+				<p class="footer-company-name">Ultra Jelota &copy; 2018</p>
+
+				<!--div class="footer-icons">
+
+					<a href="#"><i class="fa fa-facebook"></i></a>
+					<a href="#"><i class="fa fa-twitter"></i></a>
+					<a href="#"><i class="fa fa-linkedin"></i></a>
+					<a href="#"><i class="fa fa-github"></i></a>
+
+				</div-->
+
+			</div>
+
+			<div class="footer-right">
+
+				<p>Contact Us</p>
+
+				<form action="#" method="post">
+
+					<input type="text" name="email" placeholder="Email" />
+					<textarea name="message" placeholder="Message"></textarea>
+					<button>Send</button>
+
+				</form>
+
+			</div>
+
+		</footer>
+
+    <script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+
+    for (i = 0; i < acc.length; i++) {
+      acc[i].onclick = function() {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.maxHeight){
+          panel.style.maxHeight = null;
+        } else {
+          panel.style.maxHeight = panel.scrollHeight + "px";
+        }
+      }
+    }
+    </script>
   </body>
 </html>
