@@ -14,9 +14,11 @@
   $(window).on('scroll',function(){
     if($(window).scrollTop()){
       $('nav').addClass('black');
+
     }
     else {
       $('nav').removeClass('black');
+
     }
   })
 </script>
@@ -31,12 +33,12 @@
             <li> <a href="#">Home</a> </li>
             <li> <a href="#">About</a> </li>
             <li> <a href="#">FAQ</a> </li>
-            <li class="dropdown"> <a href="#">Products</a></li>
+            <li class="dropdown"> <a href="#">Products</a>
                 <ul class="dropdown-content">
-                    <li  > <a href="#">Pc</a> </li>
-                    <li > <a href="#">Components</a> </li>
+                    <li  > <a href="#" id="mango">Pc</a> </li>
+                    <li > <a href="#" id="mango">Components</a> </li>
                 </ul>
-
+            </li>
 
             <li> <a  class ="active" href="#">Sign in</a> </li>
             <li> <a  class ="active2" href="#">Sign Up</a> </li>
@@ -48,7 +50,7 @@
 
       </section>
       <div class="title">
-        <center><h1>Welcome to our ULTRA Jelota PC BUILDER. Choose the type of computer to continue...</h1>
+        <center><h1>Build your dream gaming PC with Ultra Khelota. High performance computers at a low price. Click to customize.</h1>
         <a href="#" class="active3">Get Stared</a>
       </center>
         </div>

@@ -20,7 +20,7 @@ nav{
   transition: .3s;
 }
 nav.black{
-  background: rgba(0, 0, 0, 0.8);
+  background: black;
   height:100px;
   padding:10px 100px;
 }
@@ -43,6 +43,7 @@ nav ul {
   margin-left: 0;
   padding: 0;
   display: flex;
+  display: relative;
 
 }
 nav ul li{
@@ -84,6 +85,54 @@ nav ul li a.active2{
      background-color: white;
   margin-right: 5px;
 }
+ul li:hover{
+  font-weight: bold;
+}
+
+
+ul ul{
+  position: absolute;
+  min-width: 200px;
+  display: none;
+
+
+
+}
+ul ul li{
+  display: block;
+  border-radius: 25px;
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.3);
+  background-image: linear-gradient( 45deg, rgb(245,87,108) 0%, rgb(240,147,251) 100%);
+  margin-left: 10%;
+  margin-top: 3%;
+height:  50px;
+padding-top: 5px;
+}
+#mango{
+
+
+  line-height: 40px;
+
+
+}
+
+ul li:hover ul{
+display: block;
+
+
+}
+ul li ul li {
+  font-size: 13px;
+  font-weight: normal;
+
+}
+ul li ul li:hover{
+
+  font-weight: 600;
+font-size: 15px;
+
+
+}
 section.sec1{
   width:100%;
   height:720px;
@@ -117,14 +166,7 @@ section.sec1{
   font-size: 25px;
 }
 
-.dropdown-content{
- display:block;
- display: none;
- background-color: red;
-}
-.dropdown:hover .dropdown-content {
-	display: block;
-}
+
 
 .row1{
     display: flex;
@@ -198,6 +240,7 @@ section.sec1{
   color: white;
   font-weight: 600;
    font-size: 55px;
+   padding-top: 30px;
 }
 #row{
   padding-left: 100px;
