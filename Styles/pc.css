@@ -1,0 +1,384 @@
+body{
+  margin:0;
+  padding:0;
+  font-family:Quicksand;
+
+}
+
+a{
+  text-decoration: none;
+}
+
+nav{
+  position:fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height:100%;
+  padding:10px 100px;
+  box-sizing: border-box;
+  transition: .3s;
+}
+nav.black{
+  background: linear-gradient( 45deg, rgb(245,87,108) 0%, rgb(240,147,251) 100%);
+  height:100px;
+  padding:10px 100px;
+}
+nav .logo{
+  padding:44px 20px;
+  height:80px;
+  float: left;
+  font-weight: 700;
+  font-size: 25px;
+  color: black;
+  transition: .3s;
+
+}
+nav.black .logo{
+  color:#fff;
+}
+nav ul {
+  list-style: none;
+  float: right;
+  margin-left: 0;
+  padding: 0;
+  display: flex;
+  display: relative;
+
+}
+nav ul li{
+  list-style:none;
+
+}
+nav ul li a {
+  line-height:80px;
+  color:black;
+  padding: 12px 30px;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: .3s;
+}
+nav.black ul li a {
+  color: #fff;
+}
+nav ul li a:focus {
+  outline: none;
+}
+nav ul li a.active{
+  border: 1px solid white;
+  border-radius: 25px;
+  padding: 5px 20px 5px 20px;
+  font-weight: 600;
+  background-color: rgba(0, 0, 0, 0);
+  text-shadow: 0px 2px 1px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.3);
+  margin-right: 5px;
+}
+
+nav ul li a.active2{
+  padding: 6px 20px 6px 20px;
+     color: #005bea;
+     text-shadow: 0px 2px 1px rgba(0, 0, 0, 0.3);
+     font-weight: 600;
+     border-radius: 25px;
+     box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.3);
+     background-color: white;
+  margin-right: 5px;
+}
+ul li:hover{
+  font-weight: bold;
+}
+
+
+ul ul{
+  position: absolute;
+  min-width: 200px;
+  display: none;
+
+
+
+}
+ul ul li{
+  display: block;
+  border-radius: 25px;
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.3);
+  background-image: linear-gradient( 45deg, rgb(245,87,108) 0%, rgb(240,147,251) 100%);
+  margin-left: 10%;
+  margin-top: 3%;
+height:  50px;
+padding-top: 5px;
+}
+#mango{
+
+
+  line-height: 40px;
+
+
+}
+
+ul li:hover ul{
+display: block;
+
+
+}
+ul li ul li {
+  font-size: 13px;
+  font-weight: normal;
+
+}
+ul li ul li:hover{
+
+  font-weight: 600;
+font-size: 15px;
+}
+section.sec1{
+  width:100%;
+  height:720px;
+  background: url('../Assets/background.png'),linear-gradient( 45deg, rgb(0,91,234) 0%, rgb(0,198,251) 100%);
+}
+.title{
+  text-align: center;
+  margin-top:-500px;
+  margin-left: 15%;
+  margin-right: 15%;
+  vertical-align: middle;
+  margin-bottom: 400px;
+  text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+  font-size: 20px;
+}
+pre{
+  text-align: center;
+  font-size: 16px;
+  font-family: Quicksand;
+  font-weight: bold;
+  padding: 1px;
+}
+.cadre {
+  margin-left: 30px;
+}
+.active5{
+  padding: 10px 27px 10px 27px;
+     color: #005bea;
+     text-shadow: 0px 2px 1px rgba(0, 0, 0, 0.3);
+     font-weight: 600;
+     border-radius: 25px;
+     box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.3);
+     background-color: white;
+     font-size: 25px;
+  margin-left: 66px;
+}
+.prod{
+  display: inline-block;
+  list-style-type: none;
+}
+.cadre h2 {
+  margin-left: 46px;
+}
+
+
+.footer-distributed{
+  background: url('../Assets/background.png'),linear-gradient( 45deg, rgb(0,91,234) 0%, rgb(0,198,251) 100%);
+
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	width: 100%;
+
+	text-align: left;
+
+	padding: 50px 60px 40px;
+	margin-top: 80px;
+	overflow: hidden;
+}
+
+/* Footer left */
+
+.footer-distributed .footer-left{
+	float: left;
+}
+
+/* The company logo */
+
+.footer-distributed h3{
+	color:  #ffffff;
+	margin: 0 0 10px;
+  font-size: 30px;
+}
+
+
+
+/* Footer links */
+
+.footer-distributed .footer-links{
+	color:  #ffffff;
+	margin: 0 0 10px;
+	padding: 0;
+}
+
+.footer-distributed .footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+	text-decoration: none;
+	color:  inherit;
+}
+
+.footer-distributed .footer-company-name{
+	color:  rgba(255, 255, 255, 0.5);
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0;
+}
+
+/* Footer social icons */
+
+.footer-distributed .footer-icons{
+	margin-top: 40px;
+}
+
+.footer-distributed .footer-icons a{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	background-color:  #33383b;
+	border-radius: 2px;
+
+	font-size: 20px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 35px;
+
+	margin-right: 3px;
+	margin-bottom: 5px;
+}
+
+/* Footer Right */
+
+.footer-distributed .footer-right{
+	float: right;
+}
+
+.footer-distributed .footer-right p{
+	display: inline-block;
+	vertical-align: top;
+	margin: 15px 42px 0 0;
+	color: #ffffff;
+}
+
+/* contact form */
+
+.footer-distributed form{
+	display: inline-block;
+}
+
+.footer-distributed form input,
+.footer-distributed form textarea{
+	display: block;
+	border-radius: 25px;
+	box-sizing: border-box;
+  border: 1px solid white;
+	background-color:  rgba(255, 255, 255, 0.2);
+	box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.1);
+
+	resize: none;
+
+	font: inherit;
+	font-size: 14px;
+	font-weight: normal;
+	color: white;
+
+	width: 400px;
+	padding: 18px;
+}
+
+.footer-distributed ::-webkit-input-placeholder {
+	color:  #5c666b;
+}
+
+.footer-distributed ::-moz-placeholder {
+	color:  #5c666b;
+	opacity: 1;
+}
+
+.footer-distributed :-ms-input-placeholder{
+	color:  #5c666b;
+}
+
+
+.footer-distributed form input{
+	height: 55px;
+	margin-bottom: 15px;
+}
+
+.footer-distributed form textarea{
+	height: 100px;
+	margin-bottom: 20px;
+}
+
+.footer-distributed form button{
+  background-image: linear-gradient( 45deg, rgb(245,87,108) 0%, rgb(240,147,251) 100%);
+  padding: 10px 30px 10px 30px;
+    color:white;
+     text-shadow: 0px 2px 1px rgba(0, 0, 0, 0.3);
+     font-weight: 600;
+     border-radius: 25px;
+     box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.3);
+     background-color: white;
+     font-size: 25px;
+     margin-right: 5px;
+     text-align: center;
+	    outline: 0px;
+      border: none;
+	float: right;
+}
+
+
+@media (max-width: 1000px) {
+
+	.footer-distributed {
+		font: bold 14px sans-serif;
+	}
+
+	.footer-distributed .footer-company-name{
+		font-size: 12px;
+	}
+
+	.footer-distributed form input,
+	.footer-distributed form textarea{
+		width: 250px;
+	}
+
+	.footer-distributed form button{
+		padding: 10px 35px;
+	}
+
+}
+
+@media (max-width: 800px) {
+
+	.footer-distributed{
+		padding: 30px;
+	}
+
+	.footer-distributed .footer-left,
+	.footer-distributed .footer-right{
+		float: none;
+		max-width: 300px;
+		margin: 0 auto;
+	}
+
+	.footer-distributed .footer-left{
+		margin-bottom: 40px;
+	}
+
+	.footer-distributed form{
+		margin-top: 30px;
+	}
+
+	.footer-distributed form{
+		display: block;
+	}
+
+	.footer-distributed form button{
+		float: none;
+	}
+}
